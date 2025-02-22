@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTS -->
+    <!-- BOOSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- FIM BOOSTRAP ICONS -->
+    <title>Gustavo Mendes | Back-end Developer</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="interface">
+        <div class="logo">
+            <a href="#">
+                <img src="images/Logo.png" alt="Logo do meu web portfolio" width="110" height="120">
+            </a>
+        </div><!-- logo -->
+
+        <nav class="menu-desktop">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+            </ul>
+        </nav>
+
+        <div class="btn-contato">
+            <a href="#">
+                <button>Contato</button>
+            </a>
+        </div>
+
+        <div class="btn-abrir-menu" id="btn-menu">
+            <i class="bi bi-list"></i>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+            <div class="btn-fechar">
+                <i class="bi bi-x-circle"></i>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#formulario">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="overlay-menu" id="overlay-menu"></div>
+    </div><!-- interface -->
+</header>
+
+<main>
+    <section class="topo-do-site">
+        <div class="interface">
+            <div class="flex">
+                <div class="textoPrimeiraSeção">
+                    <h1>Gustavo <span>Mendes</span></h1>
+                    <div class="txt-animado">
+                        <p>Desenvolvedor <span></span></p>
+                    </div> <!-- txt-animado -->
+                </div> <!-- textoPrimeiraSeção -->
+            </div> <!-- flex -->
+        </div> <!-- interface -->
+    </section> <!-- topo-do-site -->
+
+    <section class="especialidades" id="especialidades">
+        <div class="interface">
+            <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+            <div class="flex">
+                <div class="especialidades-box">
+                    <i class="bi bi-cup-hot"></i>
+                    <h3>Java</h3>
+                    <p>Descrição sobre Java.</p>
+                </div><!-- especialidades-box -->
+
+                <div class="especialidades-box">
+                    <i class="bi bi-bag-heart-fill"></i>
+                    <h3>Loja Online</h3>
+                    <p>Descrição sobre Android.</p>
+                </div><!-- especialidades-box -->
+
+                <div class="especialidades-box">
+                    <i class="bi bi-browser-edge"></i>
+                    <h3>Web Site</h3>
+                    <p>Descrição sobre desenvolvimento de sites.</p>
+                </div><!-- especialidades-box -->
+            </div>
+        </div><!-- interface -->
+    </section><!-- especialidades -->
+
+    <section class="sobre" id="sobre">
+        <div class="interface">
+            <div class="flex">
+                <div class="container">
+                    <div class="img-sobre">
+                        <img src="images/Foto.png" alt="Descrição da foto de Gustavo Mendes">
+                    </div><!-- img-sobre -->
+
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>SOU GUSTAVO MENDES</span></h2>
+                        <p>Olá! Sou um desenvolvedor apaixonado por tecnologia e inovação.</p>
+                        <p>Estou sempre em busca de novos desafios e oportunidades para aprender e crescer.</p>
+                        <div class="btn-social">
+                            <a href="#"><button><i class="bi bi-github"></i></button></a>
+                            <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                        </div>
+                    </div><!-- txt-sobre -->
+                </div><!-- container -->
+            </div><!-- flex -->
+        </div><!-- interface -->
+    </section><!-- sobre -->
+
+    <section class="portfolio" id="projetos">
+        <div class="interface">
+            <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+            <div class="flex">
+                <div class="img-port" style="background-image: url(images/"></div>
+                <div class="img-port" style="background-image: url(images/"></div>
+                <div class="img-port" style="background-image: url(images/"></div>
+            </div><!-- flex -->
+        </div><!-- interface -->
+    </section><!-- portfolio -->
+
+    <section class="formulario" id="formulario">
+        <div class="interface">
+            <h2 class="titulo">FALE <span>COMIGO.</span></h2>
+
+            <form method="post" action="envia.php">
+                <input type="text" name="Seu nome completo" id="" placeholder="Seu nome completo" required>
+                <input type="text" name="Seu e-mail" id="" placeholder="Seu e-mail" required>
+                <input type="text" name="Seu celular" id="" placeholder="Seu celular" required>
+                <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="interface"> <!-- Corrigido: Removido o sinal de igual e adicionado o espaço correto -->
+        <div class="live-footer">
+            <div class="flex">
+                <div class="logo-footer">
+                    <img src="images/Logo.png" alt="Logo do meu web portfolio" width="110" height="120">
+                </div>
+                <div class="btn-social">
+                    <a href="https://github.com/Meendeeezzz" aria-label="GitHub"><button><i class="bi bi-github"></i></button></a>
+                    <a href="https://www.linkedin.com/in/gustavo-miranda-mendes-da-silva-78a48a218/" aria-label="LinkedIn"><button><i class="bi bi-linkedin"></i></button></a>
+                </div>
+            </div>
+        </div>
+        <div class="line-footer borda">
+            <p><i class="bi bi-envelope-fill"></i> <a href="mailto:gumeendes26@gmail.com">gumeendes26@gmail.com</a></p> <!-- Corrigido: Adicionado mailto: -->
+        </div>
+    </div>
+</footer>
+<!-- BACKGROUND -->
+<div class="background">
+    <div class="bubble cyan"></div>
+    <div class="bubble pink"></div>
+    <div class="bubble purple"></div>
+    <div class="bubble dark-blue"></div>
+    <div class="bubble dark-red"></div>
+    <div class="bubble deep-purple"></div>
+</div>
+
+<script src="script.js"></script>
+<!-- FIM BACKGROUND -->
+</body>
+</html>
